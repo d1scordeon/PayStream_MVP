@@ -1,0 +1,95 @@
+/* Скидання стилів */
+body, h1, h2, h3, p, ul, li, a, button, input, form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* Основні стилі */
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #140E36; /* Темний фон для всієї сторінки */
+    color: #FFFFFF; /* Колір тексту на темному фоні */
+}
+
+/* Стилі заголовка */
+h2 {
+    text-align: center;
+    color: #E2E9FF; /* Колір заголовка, щоб відповідав логотипу на початковій сторінці */
+    margin-bottom: 10px; /* Додаємо відступ знизу */
+}
+
+label {
+    color: #140E36; /* Колір міток введення для відповідності заголовку */
+    font-size: 17px;
+}
+
+/* Стилізація форми */
+.registration {
+    width: 100%;
+    max-width: 400px; /* Максимальна ширина форми */
+    margin: auto;
+    padding: 20px;
+    background: #E2E9FF; /* Світлий фон форми */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Невелика тінь для форми */
+}
+
+/* Стилізація полів введення */
+.registration input[type="text"],
+.registration input[type="password"],
+.registration input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Відступ знизу між полями */
+    border-radius: 21px;
+    border: none; /* Світла обрамлення для полів */
+}
+
+/* Стилізація кнопки */
+.registration input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #140E36; /* Колір кнопки */
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration input[type="button"]:hover {
+    background-color:  #140E36; /* Темніший колір при наведенні */
+}
+
+/* Стилі для чекбоксу і посилання 'Забули пароль' */
+.registration input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.registration span,
+.registration a {
+    color: #140E36; /* Колір тексту для спану і посилання */
+    font-size: 14px;
+}
+
+.registration a {
+    text-decoration: none; /* Видалення підкреслення */
+}
+
+.registration a:hover {
+    text-decoration: underline; /* Додавання підкреслення при наведенні */
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    .registration {
+        width: auto;
+        padding: 20px;
+    }
+}

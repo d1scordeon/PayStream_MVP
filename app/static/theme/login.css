@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #140E36; /* Змінено колір фону, щоб відповідав початковій сторінці */
+    font-family: 'Arial';
+    color: #FFFFFF; /* Додаємо колір тексту, який відповідає початковій сторінці */
+}
+
+.login {
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px; /* Змінено для коректного центрування */
+    padding: 40px;
+    background: #E2E9FF; /* Змінено колір фону форми, щоб відповідав початковій сторінці */
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Додаємо тінь для кращої видимості */
+}
+
+h2 {
+    text-align: center;
+    color: #E2E9FF; /* Колір заголовка, щоб відповідав логотипу на початковій сторінці */
+    margin-bottom: 10px; /* Додаємо відступ знизу */
+}
+
+label {
+    color: #140E36; /* Колір міток введення для відповідності заголовку */
+    font-size: 17px;
+}
+
+input[type="text"],
+input[type="Password"] {
+    width: 100%; /* Змінено на 100% для коректного відображення */
+    height: 35px;
+    margin-bottom: 20px; /* Додаємо відступ знизу для кожного поля вводу */
+    border-radius: 21px;
+    border: none;
+    padding: 8px;
+}
+
+input[type="button"] {
+    width: 100%; /* Змінено на 100% для коректного відображення */
+    height: 40px;
+    border-radius: 21px;
+    border: 1px solid #ddd; /* Додаємо обрамлення для кнопки */
+    background-color: #140E36; /* Колір кнопки */
+    color: #FFFFFF; /* Колір тексту кнопки */
+    margin-bottom: 20px; /* Додаємо відступ знизу для кнопки */
+}
+
+input[type="button"]:hover {
+    background-color: #140E36; /* Затемнений колір при наведенні на кнопку */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Додаємо відступ справа від чекбоксу */
+}
+
+span {
+    color: #140E36; /* Колір тексту під чекбоксом */
+    font-size: 17px;
+}
+
+a {
+    color: #140E36; /* Колір посилання */
+    text-decoration: none; /* Видаляємо підкреслення посилання */
+
+}
+
+a:hover {
+    text-decoration: underline; /* Додаємо підкреслення при наведенні */
+}

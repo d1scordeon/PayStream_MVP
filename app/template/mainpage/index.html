@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayStream - Сервіс для проведення безготівкових розрахунків</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="{{ url_for('static', filename='theme/main_page.css') }}">
+    <script type="module" src="{{ url_for('static', filename='register.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='login.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='transaction.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='user_register_module.js') }}"></script>
+</head>
+<body>
+<div id="mainContent">
+    <div class="navbar">
+       <a class="logo" href="#">PayStream</a>
+       <div class="navbar-links">
+         <a id ="login_link">Увійти</a>
+         <a id="registration_link">Зареєструватися</a>
+       </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Ласкаво просимо у PayStream</h1>
+            <p>Сервіс для проведення безготівкових розрахунків</p>
+            <button id ="login_button">Увійти в сервіс</button>
+        </div>
+    </div>
+    
+    <div class="info-section">
+        <h2>Нещодавно дізналися про нас?</h2>
+        <p>Пройдіть реєстрацію та насолоджуйтесь нашим сервісом вже сьогодні!</p>
+        <button id="registration_button" class="register-btn">Зареєструватися</button>
+    </div>
+    
+    <div class = "footer">
+        <h5>PayStream - лише для ознайомлення</h5>
+    </div>
+</div>
+</body>
+</html>

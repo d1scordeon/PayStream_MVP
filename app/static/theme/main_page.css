@@ -1,0 +1,162 @@
+/* Скидання стилів */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* Основні стилі */
+body {
+    line-height: 2;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #E2E9FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Це вирівнює елементи вертикально */
+    padding: 14px 10%; /* Відступ з боків від загальної ширини */
+}
+
+.logo{
+    font-weight: bold;
+    color: #140E36;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-links a {
+    color: #80879D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hero-section {
+    background-color: #140E36; /* Темний колір фону */
+    color: #FFFFFF; /* Колір тексту */
+    display: flex;
+    flex-direction: column; /* Стовпчик, щоб елементи були один під одним */
+    justify-content: center; /* Центрування контенту по горизонталі */
+    align-items: center; /* Центрування контенту по вертикалі */
+    padding: 80px 0; /* Верхній та нижній відступи */
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px; /* або потрібна ширина */
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Зберігаємо розмір шрифту */
+    margin-bottom: 20px; /* Відступ знизу для заголовка */
+}
+
+.hero-content p {
+    font-size: 30px; /* Зберігаємо розмір шрифту */
+    margin-bottom: 20px; /* Відступ знизу для параграфа */
+}
+
+.hero-content button {
+    padding: 15px 100px;
+    width: 390px;
+    height: 53px;
+    font-size: 20px;
+    color: #140E36;
+    background-color: #E2E9FF;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #FFFFFF; /* Світліший колір при наведенні */
+}
+
+.info-section {
+    background-color: #E2E9FF; /* Світлий фоновий колір */
+    text-align: center; /* Центрування тексту */
+    padding: 20px; /* Відступи всередині секції */
+    color: #140E36; /* Колір тексту */
+}
+
+.info-section h2 {
+    margin-bottom: 15px; /* Відступ між заголовком і параграфом */
+    font-size: 24px; /* Розмір шрифту для заголовка */
+}
+
+.info-section p {
+    margin-bottom: 20px; /* Відступ між параграфом і кнопкою */
+    font-size: 18px; /* Розмір шрифту для параграфа */
+}
+
+.register-btn {
+    padding: 15px 100px;
+    width: 390px;
+    height: 53px;
+    font-size: 20px;
+    color: #E2E9FF;
+    background-color: #140E36;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #0a0f1a; /* Колір фону кнопки при наведенні */
+}
+
+.footer{
+    background-color: #E2E9FF;
+    text-align: center; /* Центрування тексту */
+    padding: 6px; /* Відступи всередині секції */
+    color: #ADB3C7;
+}
+
+/* Адаптивні стилі, якщо потрібно */
+@media (max-width: 768px) {
+    .info-section {
+        padding: 20px 10px; /* Менші відступи для мобільних пристроїв */
+    }
+
+    .register-btn {
+        padding: 10px 20px; /* Менші відступи всередині кнопки для мобільних пристроїв */
+    }
+}
+
+
+/* Стилі для адаптивності */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 14px 5%; /* Менший відступ для мобільних пристроїв */
+    }
+
+    .navbar-links a {
+        padding: 14px 8px; /* Менший відступ для посилань на мобільних пристроях */
+    }
+}

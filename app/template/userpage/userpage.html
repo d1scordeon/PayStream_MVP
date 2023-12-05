@@ -1,0 +1,67 @@
+<div class="sidebar">
+    <ul>
+        <li><button id="main_link">Головна</button></li>
+        <li><button id="trans_link">Проведення транзакцій</button></li>
+        <li><button id="trans_history_link">Історія транзакцій</button></li>
+        <li><button id="user_info_link">Інформація користувача</button></li>
+    </ul>
+</div>
+
+<div id="welcome-section" class="content-section">
+    <h2 id="welcome_username"></h2>
+    <p>Для керування вашими транзакціями використовуйте меню зліва.</p>
+    <form action="/logout" method="post">
+        <button type="submit" class="logout-button">Вийти</button>
+    </form>
+</div>
+
+<div id="transactions" class="content-section">
+    <h3>Проведення транзакцій</h3>
+    <div class="transaction-form">
+        <div class="form-group">
+            <label for="account-number">Номер рахунку одержувача:</label>
+            <input type="text" id="account-number" name="account-number" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Сума:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <button id = "send_transaction_button" type="submit">Виконати переказ</button>
+        </div>
+    </div>
+</div>
+
+<div id="transaction-history" class="content-section">
+    <h3>Історія транзакцій</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Одержувач</th>
+            <th>Сума</th>
+            <th>Опис</th>
+        </tr>
+        </thead>
+        <tbody id="transaction-history-container">
+        
+        </tbody>
+    </table>
+</div>
+
+<div id="user-info" class="content-section">
+    <h3>Інформація користувача</h3>
+    <div class="user-details">
+        <p>Username: <span id="username"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <p>Банківський рахунок: <span id="cardnumber"></span></p>
+        <p>Expdate: <span id="expdate"></span></p>
+        <p>CVV: <span id="cvv"></span></p>
+    </div>
+</div>
+
+
